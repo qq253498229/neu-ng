@@ -2,7 +2,7 @@
   "applicationId": "js.neutralino.zero",
   "version": "1.0.0",
   "defaultMode": "window",
-  "documentRoot": "/react-src/dist/ng001/",
+  "documentRoot": "/angular-src/dist/ng001/",
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
@@ -12,23 +12,23 @@
   ],
   "modes": {
     "window": {
-      "title": "neu-react",
+      "title": "neu-angular",
       "width": 800,
       "height": 500,
       "minWidth": 400,
       "minHeight": 200,
-      "icon": "/react-src/public/logo.png",
+      "icon": "/angular-src/public/logo.png",
       "enableInspector": true
     }
   },
   "cli": {
-    "binaryName": "neu-react",
+    "binaryName": "neu-angular",
     "extensionsPath": "/extensions/",
-    "resourcesPath": "/react-src/dist/ng001/",
+    "resourcesPath": "/angular-src/dist/ng001/",
     "frontendLibrary": {
-      "patchFile": "/react-src/src/index.html",
+      "patchFile": "/angular-src/src/index.html",
       "devUrl": "http://localhost:4200",
-      "projectPath": "/react-src/",
+      "projectPath": "/angular-src/",
       "initCommand": "npm install",
       "devCommand": "npm run start",
       "buildCommand": "npm run build",
