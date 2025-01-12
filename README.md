@@ -6,7 +6,7 @@ A simple Angular template for building Neutralinojs apps
 Create a new Neutralinojs project with this template with the following command:
 
 ```bash
-neu create myapp --template qq253498229/neutralinojs-angular
+neu create --template qq253498229/neutralinojs-angular myapp
 cd myapp
 ```
 
@@ -22,7 +22,7 @@ neu run
 
 Trigger a new Angular build and create the application bundle with the following command:
 ```bash
-neu build
+neu build --release
 ```
 
 ## License
