@@ -30,6 +30,7 @@
       "devUrl": "http://localhost:4200",
       "projectPath": "/angular-src/",
       "initCommand": "npm install",
+      "devCommand": "npm run start",
       "buildCommand": "npm run build",
       "waitTimeout": 20000
     },
