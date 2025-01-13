@@ -12,4 +12,4 @@ neutralino.js
 .storage
 *.log
 .tmp
-angular-src/src/index.html
+/package-lock.json

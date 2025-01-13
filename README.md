@@ -18,7 +18,7 @@ cd myapp
 Start the Angular development server and Neutralinojs app:
 
 ```bash
-neu run
+neu run -- --window-enable-inspector=true
 ```
 
 ## How to bundle the app

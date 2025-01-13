@@ -1,0 +1,21 @@
+{
+  "name": "demo-neu1",
+  "version": "1.0.0",
+  "description": "A simple Angular template for building Neutralinojs apps",
+  "main": "index.js",
+  "scripts": {
+    "start": "neu run -- --window-enable-inspector=true",
+    "update": "neu update",
+    "build": "neu build --release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:consolelog/demo-neu1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@neutralinojs/neu": "^11.3.0"
+  }
+}

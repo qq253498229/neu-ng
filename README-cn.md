@@ -16,7 +16,7 @@ cd myapp
 ## 如何启动开发服务器
 
 ```bash
-neu run
+neu run -- --window-enable-inspector=true
 ```
 
 ## 如何打包
