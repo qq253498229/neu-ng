@@ -25,6 +25,14 @@ neu run
 neu build --release
 ```
 
+## 如何更新
+
+从git拉取代码后没有bin目录，此时需要执行命令拉取bin目录下的二进制文件：
+
+```shell
+neu update
+```
+
 ## License
 
 [MIT](LICENSE)
