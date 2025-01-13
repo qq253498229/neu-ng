@@ -18,7 +18,8 @@
       "minWidth": 400,
       "minHeight": 200,
       "icon": "/angular-src/public/logo.png",
-      "enableInspector": true
+      "enableInspector": true,
+      "injectGlobals": true
     }
   },
   "cli": {
