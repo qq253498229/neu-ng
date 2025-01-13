@@ -1,4 +1,4 @@
-# neutralinojs-angular
+# neutralinojs-angular-template
 A simple Angular template for building Neutralinojs apps
 
 ## How to install
@@ -6,7 +6,7 @@ A simple Angular template for building Neutralinojs apps
 Create a new Neutralinojs project with this template with the following command:
 
 ```bash
-neu create --template qq253498229/neutralinojs-angular myapp
+neu create --template qq253498229/neu-ng myapp
 cd myapp
 ```
 
