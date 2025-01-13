@@ -1,4 +1,7 @@
 # neutralinojs-angular-template
+
+[中文](./README-cn.md)
+
 A simple Angular template for building Neutralinojs apps
 
 ## How to install
