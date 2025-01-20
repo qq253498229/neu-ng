@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from './shared/shared.module';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { app } from '@neutralinojs/lib';
+import { app, events, os } from '@neutralinojs/lib';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +16,16 @@ export class AppComponent implements OnInit {
   isCollapsed = false;
 
   ngOnInit(): void {
-    app.getConfig().then(r => {
-      console.log('getConfig r', r);
-    }).catch(e => {
-      console.log('getConfig e', e);
-    });
+    os.setTray({
+      icon: '/angular-src/public/logo_tray.png',
+      menuItems: [
+        {id: 'exitApp', text: '关闭应用'},
+      ],
+    }).then();
+    events.on('trayMenuItemClicked', ev => {
+      if ('exitApp' === ev.detail.id) {
+        app.exit().then();
+      }
+    }).then();
   }
 }
