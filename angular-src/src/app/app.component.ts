@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, isDevMode, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './shared/shared.module';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     os.setTray({
-      icon: '/angular-src/public/logo_tray.png',
+      icon: isDevMode() ? '/angular-src/public/logo_tray.png' : '/angular-src/dist/ng001/browser/logo_tray.png',
       menuItems: [
         {id: 'exitApp', text: '关闭应用'},
       ],
