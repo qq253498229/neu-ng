@@ -7,7 +7,8 @@
   "enableServer": true,
   "enableNativeAPI": true,
   "nativeAllowList": [
-    "os.setTray"
+    "os.setTray",
+    "app.exit"
   ],
   "modes": {
     "window": {
