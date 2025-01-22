@@ -1,5 +1,5 @@
 {
-  "applicationId": "js.neutralino.zero",
+  "applicationId": "com.neung",
   "version": "1.0.0",
   "defaultMode": "window",
   "documentRoot": "/angular-src/dist/ng001/browser/",
@@ -7,12 +7,11 @@
   "enableServer": true,
   "enableNativeAPI": true,
   "nativeAllowList": [
-    "app.*",
-    "filesystem.readDirectory"
+    "os.setTray"
   ],
   "modes": {
     "window": {
-      "title": "neu-react",
+      "title": "neu-ng",
       "width": 800,
       "height": 500,
       "minWidth": 400,
@@ -23,7 +22,7 @@
     }
   },
   "cli": {
-    "binaryName": "neu-react",
+    "binaryName": "neu-ng",
     "extensionsPath": "/extensions/",
     "resourcesPath": "/angular-src/dist/ng001/browser/",
     "frontendLibrary": {
