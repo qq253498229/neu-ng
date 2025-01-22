@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     os.setTray({
-      icon: isDevMode() ? '/angular-src/public/logo_tray.png' : '/angular-src/dist/ng001/browser/logo_tray.png',
+      icon: isDevMode() ? '/angular-src/public/logo_tray.png' : '/angular-src/dist/myapp/browser/logo_tray.png',
       menuItems: [
         {id: 'exitApp', text: '关闭应用'},
       ],
