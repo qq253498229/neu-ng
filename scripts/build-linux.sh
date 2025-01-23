@@ -91,9 +91,9 @@ for APP_ARCH in "${APP_ARCH_LIST[@]}"; do
 
     APP_DST="${script_dir}/../dist/linux_${APP_ARCH}/${APP_NAME}"
 
-    if [ -e "./preproc-linux.sh" ]; then
+    if [ -e "${script_dir}/preproc-linux.sh" ]; then
         echo "  Running pre-processor ..."
-        . preproc-linux.sh
+        ${script_dir}/preproc-linux.sh
     fi
 
     EXE="${script_dir}/../dist/${APP_BINARY}/${APP_BINARY}-linux_${APP_ARCH}"
@@ -177,7 +177,7 @@ for APP_ARCH in "${APP_ARCH_LIST[@]}"; do
 
     if [ -e "${script_dir}/postproc-linux.sh" ]; then
         echo "  Running post-processor ..."
-        . postproc-linux.sh
+        ${script_dir}/postproc-linux.sh
     fi
 
     echo

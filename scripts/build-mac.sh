@@ -70,9 +70,9 @@ for APP_ARCH in "${APP_ARCH_LIST[@]}"; do
     APP_MACOS=${APP_DST}/Contents/MacOS
     APP_RESOURCES=${APP_DST}/Contents/Resources
 
-    if [ -e "./preproc-mac.sh" ]; then
+    if [ -e "${script_dir}/preproc-mac.sh" ]; then
         echo "  Running pre-processor ..."
-        . preproc-mac.sh
+        ${script_dir}/preproc-mac.sh
     fi
 
     EXE="${script_dir}/../dist/${APP_BINARY}/${APP_BINARY}-mac_${APP_ARCH}"
@@ -140,7 +140,7 @@ for APP_ARCH in "${APP_ARCH_LIST[@]}"; do
 
     if [ -e "${script_dir}/postproc-mac.sh" ]; then
         echo "  Running post-processor ..."
-        . postproc-mac.sh
+        ${script_dir}/postproc-mac.sh
     fi
 
     if [ "$OS" == "Darwin" ]; then

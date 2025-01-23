@@ -64,7 +64,7 @@ for APP_ARCH in "${APP_ARCH_LIST[@]}"; do
 
     if [ -e "${script_dir}/preproc-win.sh" ]; then
         echo "  Running pre-processor ..."
-        . preproc-win.sh
+        ${script_dir}/preproc-win.sh
     fi
 
     EXE="${script_dir}/../dist/${APP_BINARY}/${APP_BINARY}-win_${APP_ARCH}.exe"
